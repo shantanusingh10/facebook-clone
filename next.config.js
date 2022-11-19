@@ -5,7 +5,8 @@ const nextConfig = {
     domains: [
       "upload.wikimedia.org",
       "1000logos.net",
-      "images.pexels.com"
+      "images.pexels.com",
+      "scontent.fjai2-3.fna.fbcdn.net"
     ]
   }
 }

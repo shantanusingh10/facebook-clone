@@ -3,6 +3,7 @@ import { useSession } from 'next-auth/react';
 import { HiOutlineVideoCamera } from 'react-icons/Hi';
 import { IoMdPhotos } from 'react-icons/io';
 import { BsEmojiSmile } from 'react-icons/bs';
+import Image from 'next/image';
 
 const CreatePost = () => {
     
