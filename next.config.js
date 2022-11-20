@@ -6,7 +6,9 @@ const nextConfig = {
       "upload.wikimedia.org",
       "1000logos.net",
       "images.pexels.com",
-      "scontent.fjai2-3.fna.fbcdn.net"
+      "scontent.fjai2-3.fna.fbcdn.net",
+      "static.xx.fbcdn.net",
+      "scontent.fjai2-2.fna.fbcdn.net"
     ]
   }
 }
