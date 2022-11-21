@@ -2,7 +2,7 @@ import React from 'react'
 
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div className='flex justify-center'>
     <h1>Privacy Policy of www.fb-clone-fe.herokuapp.com</h1>
 
 <p>www.fb-clone-fe.herokuapp.com operates the https://fb-clone-fe.herokuapp.com/ website, which provides the SERVICE.</p>
