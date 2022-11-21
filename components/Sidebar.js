@@ -3,7 +3,7 @@ import {ImUsers} from 'react-icons/im'
 import Image from 'next/image'
 import Sidebaritem from './Sidebaritem'
 import {MdGroups, MdOutlineOndemandVideo,MdOutlineExpandMore} from 'react-icons/md'
-import { AiOutlineShop } from 'react-icons/Ai'
+import { AiOutlineShop } from 'react-icons/ai'
 import {BsStopwatch} from 'react-icons/bs'
 import { useSession } from 'next-auth/react'
 
