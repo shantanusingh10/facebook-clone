@@ -60,6 +60,9 @@ const PrivacyPolicy = () => {
 
 <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>    
         
+        <h1>Data Deletion Process</h1>
+        <p>We delete the data of every user every 30 days</p>
+
     </div>
   )
 }
