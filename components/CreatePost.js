@@ -10,7 +10,7 @@ import { addPost, selectPost } from "../public/src/features/postSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const CreatePost = () => {
-  const FACEBOOK_CLONE_ENDPOINT = "http://localhost:8080/api/v1/post";
+  const FACEBOOK_CLONE_ENDPOINT = "https://fb-clone-be.herokuapp.com/api/v1/post";
   const { data: session, status } = useSession();
   const dispatch = useDispatch();
   const inputRef = useRef(null);

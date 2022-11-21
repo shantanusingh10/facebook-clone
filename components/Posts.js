@@ -10,7 +10,7 @@ const Posts = () => {
   useEffect(() => {
     const fetchData = () => {
       const response = axios
-        .get("http://localhost:8080/api/v1/post")
+        .get("https://fb-clone-be.herokuapp.com/api/v1/post")
         .then((response) => {
           console.log(response.data);
           dispatch(addAllPost(response.data));
