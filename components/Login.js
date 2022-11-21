@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { signIn } from "next-auth/react";
+import PrivacyPolicy from "./PrivacyPolicy";
 ("next-auth/client");
 
 const Login = () => {
@@ -29,6 +30,8 @@ const Login = () => {
         className="px-20 py-4 z-10 text-2xl cursor-pointer -mt-16 bg-blue-500 rounded-md text-white">
         Login
       </a>
+
+      <PrivacyPolicy/>
     </div>
   );
 };
