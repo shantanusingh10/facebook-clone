@@ -8,6 +8,7 @@ const nextConfig = {
       "images.pexels.com",
       "scontent.fjai2-3.fna.fbcdn.net",
       "static.xx.fbcdn.net",
+      "lh3.googleusercontent.com",
       "scontent.fjai2-2.fna.fbcdn.net"
     ]
   }
