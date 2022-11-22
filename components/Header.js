@@ -51,7 +51,7 @@ const Header = () => {
         </div>
 
         <div className="flex items-center justify-end min-w-fit space-x-2">
-        <Image src = {session ?.user.image} className = "rounded-full cursor-pointer"
+        <Image src = {session?.user.image} className = "rounded-full cursor-pointer"
           onClick={signOut}
           height={40}
           width = {40}
