@@ -12,6 +12,7 @@ import { userAgent } from 'next/server'
 
 const Header = () => {
   const {data: session} = useSession();
+  console.log(session);
   return (
     <div className='bg-white flex items-center p-2 shadow-md top-0 sticky z-50 h-16'>
         <div className='flex min-w-fit' >
