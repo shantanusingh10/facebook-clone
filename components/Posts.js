@@ -20,11 +20,16 @@ const Posts = () => {
     console.log(posts);
   }, []);
 
+  const postsArray = [];
+
+  for(var i = posts.length - 1 ; i >= 0; i--){
+    postsArray.push(<Post post = {posts[i]} key = {posts[i].id} />);
+  }
+
+
   return (
     <div>
-      {posts.map((post) => (
-        <Post post={post} key={post.id} />
-      ))}
+      {postsArray}
     </div>
   );
 };
