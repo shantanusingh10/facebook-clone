@@ -9,7 +9,8 @@ const nextConfig = {
       "scontent.fjai2-3.fna.fbcdn.net",
       "static.xx.fbcdn.net",
       "lh3.googleusercontent.com",
-      "scontent.fjai2-2.fna.fbcdn.net"
+      "scontent.fjai2-2.fna.fbcdn.net",
+      "png.pngtree.com"
     ]
   }
 }

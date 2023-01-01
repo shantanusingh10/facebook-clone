@@ -9,7 +9,8 @@ import RightSidebar from '../components/RightSidebar'
 export default function Home({ session }) {
 
   if(!session) return <Login/>
-
+  // Add this in node_modules/react-dom/index.js
+  window.React1 = require('react'); 
   return (
     <div >
       <Head>

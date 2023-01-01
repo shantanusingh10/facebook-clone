@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { React, useState, useRef } from "react";
+import  React, { useState, useRef } from "react";
 import { HiOutlineVideoCamera } from "react-icons/hi";
 import { IoMdPhotos } from "react-icons/io";
 import { BsEmojiSmile } from "react-icons/bs";
@@ -8,9 +8,10 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import axios from "axios";
 import { addPost, selectPost } from "../public/src/features/postSlice";
 import { useDispatch, useSelector } from "react-redux";
+import AppConstants from "../constants/AppConstants";
 
 const CreatePost = () => {
-  const FACEBOOK_CLONE_ENDPOINT = "https://fb-clone-be.herokuapp.com/api/v1/post";
+  const FACEBOOK_CLONE_ENDPOINT = "http://194.59.165.178/fb-clone/api/v1/post";
   const { data: session, status } = useSession();
   const dispatch = useDispatch();
   const inputRef = useRef(null);
@@ -21,19 +22,18 @@ const CreatePost = () => {
     hiddenFileInput.current.click();
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!inputRef.current.value) return;
     const formData = new FormData();
 
     formData.append("file", imageToPost);
-    console.log("imagetopost: " + imageToPost);
     formData.append("post", inputRef.current.value);
     formData.append("name", session?.user.name);
     formData.append("email", session?.user.email);
     formData.append("profilePic", session?.user.image);
 
-    axios
+    await axios
       .post(FACEBOOK_CLONE_ENDPOINT, formData, {
         headers: { Accept: "application/json" },
       })
@@ -86,7 +86,7 @@ const CreatePost = () => {
         <div
           onClick={removeImage}
           className="flex items-center px-4 py-2 space-x-4 filter hover:brightness-110 transition duration-150 cursor-pointer">
-          <img src={imageToPost} className="h-10 object-contain" />
+          <Image src={imageToPost} className="h-10 object-contain" />
           <RiDeleteBin6Line className="h-8 hover:text-red-500" />
         </div>
       )}

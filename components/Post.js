@@ -4,12 +4,13 @@ import { FiThumbsUp } from "react-icons/fi";
 import { FaRegCommentAlt } from "react-icons/fa";
 import { RiShareForwardLine } from "react-icons/ri";
 
+
 const Post = ({ post }) => {
   return (
     <div className="flex flex-col" key={post.id}>
       <div className="bg-white mt-6 rounded-md p-4">
         <div className="flex items-center space-x-2">
-          <img src={post.profilePic} className="rounded-full w-10 h-10" />
+          <Image src={post.profilePic} className="rounded-full w-10 h-10" />
           <div>
             <p className="font-medium">{post.name}</p>
             <p className="text-xs text-gray-500">{post.timeStamp}</p>
